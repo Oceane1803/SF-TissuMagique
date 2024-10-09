@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Creations{% endblock %}
+
+{% block body %}
+    <h1>Creations</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ creation.id }}</td>
+            </tr>
+            <tr>
+                <th>Image</th>
+                <td>{{ creation.Image }}</td>
+            </tr>
+            <tr>
+                <th>Nom</th>
+                <td>{{ creation.Nom }}</td>
+            </tr>
+            <tr>
+                <th>Taille</th>
+                <td>{{ creation.Taille }}</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>{{ creation.Description }}</td>
+            </tr>
+            <tr>
+                <th>Prix</th>
+                <td>{{ creation.Prix }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_creations_index') }}">back to list</a>
+
+    <a href="{{ path('app_creations_edit', {'id': creation.id}) }}">edit</a>
+
+    {{ include('creations/_delete_form.html.twig') }}
+{% endblock %}

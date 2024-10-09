@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="row">
+        {% for creation in creations %}
+            <div class="col-md-3">
+                <div class="card">
+                    {% if creation.imagePath %}
+                    <img src="{{ asset('uploads/creations/' ~ creation.ImagePath) }}" alt="{{ creation.nom }}" class="card-img-top">
+                    {% else %}
+                        <p>No image available</p>
+                    {% endif %}
+                    <div class="card-body">
+                        <h5 class="card-title">{{ creation.nom }}</h5>
+                        <p class="card-text">Taille: {{ creation.taille }} <br> Prix: {{ creation.prix }}€</p>
+                        <p class="card-text">Détails: {{ creation.description }}</p>
+                        <form action="#" method="GET">
+                            {# <input id="prodId" name="prodId" type="hidden" value="{{ creation.reference }}"> #}
+                            {# <input type="submit" class="btn btn-primary" value="Voir"> #}
+                        </form>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

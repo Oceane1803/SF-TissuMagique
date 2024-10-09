@@ -1,0 +1,93 @@
+body {
+    background-color: #F4FAFB;
+    color: #3C425A;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+.nav {
+    background-color: #3C425A;
+    padding: 10px 0;
+}
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav ul li {
+    margin: 0 15px;
+}
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.nav ul li a.active {
+    color: #CD613F;
+}
+.swiper-container {
+    width: 100%;
+    height: 300px;
+}
+.swiper-slide {
+    background-color: #335F8A;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+.products {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.product {
+    background-color: #335F8A;
+    color: white;
+    width: 30%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2 {
+    color: #3C425A;
+}
+.footer {
+    background-color: #3C425A;
+    color: #CD613F;
+    padding: 20px;
+    text-align: center;
+}
+
+                                        /*-------------VIGNETTES CREATIONS-------------*/
+.card{
+    /*height: 100%;*/
+    display: flex;
+    flex-direction: column;
+    margin:2%;
+    text-align: center;
+}
+                                        
+/*.card img{
+    height: 300px;
+}*/
+                                        
+.card-body {
+    background-color:#85a7c8;
+    flex-grow: 1;
+}
+                                        
+.card .btn{
+    background-color:#CD613F;
+    border-color:#CD613F;
+}
+                                        

@@ -1,0 +1,27 @@
+controllers:
+    resource: ../src/Controller/
+    type: attribute
+
+app_home:
+    path: /home
+    controller: App\Controller\HomeController::index
+
+app_creations:
+    path: /Creations
+    controller: App\Controller\CreationsController::index
+
+app_customization:
+    path: /personnalisation
+    controller: App\Controller\CustomizationController::index
+
+app_about:
+    path: /a-propos
+    controller: App\Controller\AboutController::index
+
+app_contact:
+    path: /contact
+    controller: App\Controller\ContactController::index
+
+app_login:
+    path: /connexion
+    controller: App\Controller\RegistrationController::login
